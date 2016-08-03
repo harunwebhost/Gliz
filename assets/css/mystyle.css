@@ -1,0 +1,81 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.pricing_margin{
+	margin-top: 20px;
+}
+
+
+ .panel-transparent {
+        background: none;
+    }
+
+    .panel-transparent .panel-body{
+        background: rgba(122, 130, 136, 0.2)!important;
+    }
+
+    .panel-transparent .panel-body{
+        background: rgba(46, 51, 56, 0.2)!important;
+    }
+    .sliderform .panel-primary > .panel-heading{
+                 color: #fff;
+                background-color: #2BCDC1;
+    
+        }
+        .sliderform .btn-sm{
+          width: 50%;
+          color: #fff;
+          background-color: #2BCDC1;
+          font-weight: bolder;
+        }
+        .sliderform .panel-primary{
+          border-color: gray!important;
+        }
+        .sliderform .checkbox label{
+          color: #fff;
+          font-weight: bolder;
+        }
+  .myfooter h3{
+    color:#FFC309;
+
+  }
+  .myfooter{
+    border-top: 5px solid #d34836;
+  }
+  .myfooter ul li a{
+   color:#ccc;
+   font-size: 14px; 
+  }
+   .myfooter ul li a:hover{
+    color: white;
+    }
+  .myfooter ul li{
+    margin: 10px 0px;
+  }
+  .navbar-default .navbar-nav > li > a {
+        font-size: 12px;
+    padding-left: 5px;
+    padding-right: 6px;
+  }
+.footer-copyright p, .footer-copyright p a{
+  color: white;
+}
+.overlay {
+  padding: 40px 0px;
+}
+.sidebar_form .panel-heading {
+  color:#fff;
+  background-color:#2BCDC1;
+}
+
+#menu-area #navbar {
+    padding-right: 38px;
+}
+.inputGroupContainer{
+      /*padding: 15px 20px;*/
+    }
