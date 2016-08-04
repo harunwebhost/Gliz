@@ -6,7 +6,7 @@ $connection = mysqli_connect('localhost', 'root', '');
 if (!$connection) {
     die("Connection failed: " . mysql_error());
 }else{
-  mysqli_select_db($connection,'stockglizsearch');
+  mysqli_select_db($connection,'amruth_testing');
 
 }
 return $connection; 
@@ -146,102 +146,9 @@ function page_redirection($pagename,$message){
 	}
 
 
-
-function delete_records($priary_key,$delete_value,$table_name,$pagename,$message){
-	$sql="DELETE FROM $table_name WHERE $priary_key=$delete_value";
-	execute_sql_query($sql);
-	page_redirection($pagename,$message);
-
-}
-
-
 ?>
 
 
-<?php 
 
-	function get_col_names($table_name){  
-?>
- <thead>
-    
-    <tr>
-<?php   
-	  $sql = "SHOW COLUMNS FROM $table_name";  
-    $result = execute_sql_query($sql);     
-    while($record = execute_fetch($result)){  
-     $fields[] = $record['0'];  
-    }
-    foreach ($fields as $key => $value){  
-      echo '<th>'.$value.'</th>';  
-}		
-       echo '<th>Action</th>';	
-      	?> 
-      </tr>
-</thead>
-<tbody>
-      	<?php 
-      	$sql_1="SELECT * FROM $table_name";
-		$result1=execute_sql_query($sql_1);
-        while ($user=execute_fetch($result1)) {
-		echo "	<tr>";
-		foreach ($fields as $key => $value){  
-     	 echo '<td>'.$user[$value].'</td>';  
-		}
-		
-		if($table_name=="mainpage"){
-			$edit_url="index.php?main_id=".$user['mainpage_id'];
-			$delete_url="view_master.php?delete_id=".$user['mainpage_id'].'&tbles='.$table_name;
-		}
-		if($table_name=="childpage"){
-			$edit_url="index.php?child_id=".$user['child_id'].'&main_id='.$user['mainpage_id'];
-			$delete_url="view_master.php?delete_id=".$user['child_id'].'&tbles='.$table_name;;
-			
-		}
-		if($table_name=="services"){
-			$edit_url="services.php?service_id=".$user['services_id'];
-			$delete_url="view_master.php?delete_id=".$user['services_id'].'&tbles='.$table_name;;
-		}
 
-		if($table_name=="pricing"){
-			$edit_url="pricing.php?pricing_id=".$user['pricing_id'];
-			$delete_url="view_master.php?delete_id=".$user['pricing_id'].'&tbles='.$table_name;;
-		}
-
-		?>
-		<td><!-- Single button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li role="separator" class="divider"></li>
-    <li><a href="<?php echo $edit_url;?>">Edit Record</a></li>
-     <li role="separator" class="divider"></li>
-    <li><a href="<?php echo $delete_url;?>">Delete Record</a></li>
- 
-  </ul>
-</div></td>
-	<?php 
-		echo "</tr>";
-	}?>
- <?php }  
-?>
-
-<?php 
-	
-	function delete_page_records($delete_id,$table_name){
-			
-			$sql="Select * from $table_name";
-			$result=execute_sql_query($sql);
-			$row = mysqli_fetch_assoc($result);
-			$fields = array_keys($row);
-			$primary_key=$fields[0];
-			$message="Row is deleated";
-			$pagename="index.php";
-			$sql_delete="DELETE FROM $table_name WHERE $primary_key=$delete_id";
-			execute_sql_query($sql_delete);
-			page_redirection($pagename,$message);
-	}
-
- ?>
 
