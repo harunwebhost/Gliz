@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="samples.css">
     <link rel="stylesheet" href="toolbarconfigurator/lib/codemirror/neo.css">
 
-                <textarea id="editor1" name="editor"> Added</textarea>
+                <textarea id="editor1" name="editor">Added <?php echo $content; ?></textarea>
             
 
 <script>
