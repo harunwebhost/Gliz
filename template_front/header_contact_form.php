@@ -1,6 +1,6 @@
-<div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+<!-- <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
     <div class="modal-dialog">
-      <!-- Start login section -->
+      Start login section
       <div id="login-content" class="modal-content">
         <div class="modal-header">
           <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
@@ -25,7 +25,7 @@
           <span>No account ? <a id="signup-btn" href="#">Sign Up.</a></span>            
         </div>
       </div>
-      <!-- Start signup section -->
+      Start signup section
       <div id="signup-content" class="modal-content">
         <div class="modal-header">
           <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
@@ -56,4 +56,4 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->

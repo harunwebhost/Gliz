@@ -22,22 +22,22 @@
                 <li>
                   <div class="phone">
                     <i class="fa fa-phone"></i>
-                    <a href="tel:7411033926">Your Phone#</a>
+                    <a href="tel:7411033926">**********</a>
                   </div>
                 </li>
                 <li>
                   <div class="mail">
                     <i class="fa fa-envelope"></i>
-                   <a href="mailto:">your Email Id</a>
+                   <a href="mailto:">info@glizreasearch.com</a>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <div class="header-login">
+            <!-- <div class="header-login">
               <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Sign Up</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
