@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,4 +11,18 @@
             CKEDITOR.replace( 'editor1' );
         </script>
     </body>
-</html>
+</html> -->
+
+
+    <script src="ckeditor.js"></script>
+    <script src="editorjs/sample.js"></script>
+    <link rel="stylesheet" href="samples.css">
+    <link rel="stylesheet" href="toolbarconfigurator/lib/codemirror/neo.css">
+
+                <textarea id="editor1" name="editor"> Added</textarea>
+            
+
+<script>
+    initSample();
+</script>
+

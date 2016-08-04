@@ -108,12 +108,14 @@
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Post Contents <span class="required">*</span>
                         </label>
-                        <div class="col-md-8 col-sm-8 col-xs-12">
+
+                        <?php require_once('editor.php'); ?>
+                        <!-- <div class="col-md-8 col-sm-8 col-xs-12">
                          <textarea name="page[contents]" class="form-control col-md-7 col-xs-12" id="editor1"><?php echo $content; ?></textarea>
-                    <script>
+                                            <script>
                         CKEDITOR.replace( 'editor1' );
-                   </script>
-                        </div>
+                                           </script>
+                        </div> -->
                       </div>
                         <?php  if(isset($_GET['child_id'])){?>
                       <div class="form-group">
