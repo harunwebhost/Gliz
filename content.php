@@ -32,7 +32,7 @@
           <div class="blog-archive-area">
             <div class="row">
             <?php 
-              if($title=="Services") {
+              if($title=="Services" || $title=="Pricing") {
                   $col="12";
               }else{
                 $col="8";
@@ -59,9 +59,9 @@
                         //require_once($get_template_directory.'/show_services.php');
                          require_once($get_template_directory.'/tabs.php'); 
                       }elseif($title=="Pricing"){
-                        require_once($get_template_directory.'/show_pricing.php');
-                        $slected_pricing="";
-                        show_pricing_list($slected_pricing);
+                        require_once($get_template_directory.'/tabs.php'); 
+                        //$slected_pricing="";
+                        //show_pricing_list($slected_pricing);
                       }elseif(isset($_GET['pricing_id'])){
                        require_once($get_template_directory.'/show_pricing.php');
                         $slected_pricing=sql_injection($_GET['pricing_id']);
